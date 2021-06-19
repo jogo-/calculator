@@ -152,7 +152,7 @@ void MathRichEditBox::InsertText(String ^ text, int cursorOffSet, int selectionL
 {
     // If the rich edit is empty, the math zone may not exist, and so selection (and thus the resulting text) will not be in a math zone.
     // If the rich edit has content already, then the mathzone will already be created due to mathonly mode being set and the selection will exist inside the
-    // math zone. To handle this, we will force a math zone to be created in teh case of the text being empty and then replacing the text inside of the math
+    // math zone. To handle this, we will force a math zone to be created in the case of the text being empty and then replacing the text inside of the math
     // zone with the newly inserted text.
     if (GetMathTextProperty() == nullptr)
     {
